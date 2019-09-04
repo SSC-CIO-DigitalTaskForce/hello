@@ -1,7 +1,7 @@
 # Hello!
 This project will help you get setup and ready to work with Git and the GitHub flow.  
 
-:heavy_check_mark: If you've never worked with Git, [this handbook](https://guides.github.com/introduction/git-handbook/) is a great intro to the concepts.  There's also a good guide on the [GitHub flow](https://guides.github.com/introduction/flow/).
+:heavy_check_mark: If you're new to Git, [this handbook](https://guides.github.com/introduction/git-handbook/) is a great intro.  There's also a good guide on the [GitHub flow](https://guides.github.com/introduction/flow/).
 
 # Get started
 1. [Create your GitHub account](https://github.com/join).
@@ -18,7 +18,7 @@ git config --global user.email "your.name@canada.ca"
 Now that Git is setup, you're ready to start working.  You'll need a local copy of this project on your computer so you can make changes.  This is where the distributed part of Git comes in.  Many people can work on cloned, local copies of a project, and have those changes merged back into a single remote project (called `origin`).
 
 ```bash
-# This command creates a copy of the repo in the command prompts current directory.
+# This command creates a copy of the repo in the command prompt's current directory.
 git clone https://github.com/SSC-CIO-DigitalTaskForce/hello.git
 ```
 # Make a change
