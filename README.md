@@ -35,7 +35,7 @@ You're now working in a new branch of the repository.  All Git repositories have
 1. Open the `HELLO.md` markdown file in a text editor like Notepad or VS Code.
 1. Add your name to the file and **Save**.
 1. Go back to GitHub Desktop.  It now shows that you've changed the `HELLO.md` file, and exactly what was changed.  
-1. If you're happy with the change, enter a commit summary and click **Commit to desktop**.  For more complex changes, you can also enter a  description.
+1. If you're happy with the change, enter a commit summary and click **Commit**.  For more complex changes, you can also enter a description.
 
 ![GitHub Desktop view of file changes and the commit message](./assets/imgs/diff.png)
 
