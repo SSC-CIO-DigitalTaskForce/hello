@@ -47,9 +47,8 @@ You're now working in a new branch of the repository.  All Git repositories have
 
 Now that you've made a change, it's time to merge it into the `master` branch of the repository.  This is done on GitHub with a Pull Request.
 
-1. Select `Publish branch` from the top bar.
-1. Go to [this repository on GitHub](https://github.com/SSC-CIO-DigitalTaskForce/hello).
-1. Click the green `Compare branch` button. 
+1. Select `Publish branch` from the top bar. 
+1. Select `Create Pull Request`.  This opens GitHub in a browser and lets you view the differences between your branch and `master`.
 1. Update the pull request title and description to explain your change.
 1. Click `Create pull request`.
 
