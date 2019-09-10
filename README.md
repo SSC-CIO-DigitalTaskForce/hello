@@ -4,7 +4,7 @@ This project will help you get setup and ready to work with Git and the GitHub f
 # Get started
 1. [Create your GitHub account](https://github.com/join).
 1. [Download and install GitHub Desktop](https://desktop.github.com/).
-1. [Download and install VS Code](https://code.visualstudio.com/download) (optional, but recommended!).
+1. [Download and install VS Code](https://code.visualstudio.com/download) (optional, but recommended).
 
 # Setup GitHub Desktop
 1. Open GitHub Desktop.
@@ -56,7 +56,7 @@ The pull request can now be reviewed by other team members, and if everything lo
 As you're working on a repository, you'll also want to get other people's changes.  
 
 1. Select `Fetch origin` from the top bar.
-1. If there are changes, it will ask if you want to merge them with your branch.
+1. If there are changes, it will ask if you want to `Pull origin`.  This will merge the changes with your selected branch.
 
 # That's it!
 You're now ready to start working in Git.  If you have any problems following this guide, let us know with [an issue](https://github.com/SSC-CIO-DigitalTaskForce/hello/issues) or, even better, suggest a change with a pull request :wink:
