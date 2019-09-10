@@ -1,96 +1,65 @@
 # Hello!
 This project will help you get setup and ready to work with Git and the GitHub flow.  
 
-:heavy_check_mark: If you're new to Git, [this handbook](https://guides.github.com/introduction/git-handbook/) is a great intro.  There's also a good guide on the [GitHub flow](https://guides.github.com/introduction/flow/).
+:heavy_check_mark: If you're new to Git, [this handbook](https://guides.github.com/introduction/git-handbook/) is a great intro.
 
 # Get started
 1. [Create your GitHub account](https://github.com/join).
-1. [Download and install Git](https://git-scm.com/downloads).
+1. [Download and install GitHub Desktop](https://desktop.github.com/).
 1. [Download and install VS Code](https://code.visualstudio.com/download) (optional, but recommended!).
-1. Configure Git with your name and email.  Use the same email that you created your GitHub account with:
-```bash
-# Open a command prompt
-git config --global user.name "Your name"
-git config --global user.email "your.name@canada.ca"
-```
 
-# Clone the remote project
-Now that Git is setup, you're ready to start working.  You'll need a local copy of this project on your computer so you can make changes.  This is where the distributed part of Git comes in.  Many people can work on cloned, local copies of a project, and have those changes merged back into a single remote project (called `origin`).
+# Setup GitHub Desktop
+1. Open GitHub Desktop.
+1. Go to `File > Options` and select `Accounts`.
+1. Sign into your GitHub account.
+1. Next, go to `Git`, enter your name and email address and **Save**.
 
-```bash
-# This command creates a copy of the repo in the command prompt's current directory.
-git clone https://github.com/SSC-CIO-DigitalTaskForce/hello.git
-```
+# Clone a repository
+To work with GitHub, you need a local copy of the repository on your computer.
+
+1. Go to `File > Clone Repository...`.
+1. Select this repository (`SSC-CIO-DigitalTaskForce/hello`).
+1. Select the folder you want to clone it to on your computer and **Clone**.
+
+:heavy_check_mark: You're now ready to start making changes!
+
+# Create a new branch
+We use the [GitHub flow](https://guides.github.com/introduction/flow/) to make changes.  To get started, we'll create a branch:  
+
+![GitHub Desktop current repository menu bar](./assets/imgs/current-repository.png)
+
+1. Make sure `hello` is the Current repository.
+1. Select `Current branch` and click **New branch**.
+1. Give it a meaningful name and click **Create**.
+
+You're now working in a new branch of the repository.  All Git repositories have a main branch called `master`.  When you make changes in a new branch, it keeps your work separate from the `master` branch until you're ready to merge your work.  This lets multiple people work on the same Git repository without overwriting each other's work.
+
 # Make a change
-Next, we're going to make a change and commit it to your local project.  A commit is a snapshot of a file's current state.  Git keeps a history of all the commits made to a project, so you can always see exactly what was done over the life of a project.
 
-1. Create a branch for your change.  This keeps your work separate from the main project until you're happy with it and ready to share it with other people working on the project.
-```bash
-# Change to the project directory
-cd hello
+1. Open the `HELLO.md` markdown file in a text editor like Notepad or VS Code.
+1. Add your name to the file and **Save**.
+1. Go back to GitHub Desktop.  It'll now show you that you've changed the `HELLO.md` file, and exactly what was changed.  
+1. If you're happy with the change, enter a commit summary and click **Commit to desktop**.  For more complex changes, you can also enter a commit description.
 
-# Create and change to a new branch
-git branch your-branch-name
-git checkout your-branch-name
-```
-2. Open the [HELLO.md](https://github.com/SSC-CIO-DigitalTaskForce/hello/blob/master/HELLO.md) markdown file in a text editor (I'm partial to [VS Code](https://code.visualstudio.com/download)).
-3. Add your name to it and save the file.
+:heavy_check_mark: You've just created a new commit!  This is where Git really shines.  It keeps a complete history of changes (commits) made to a project.
 
-:heavy_check_mark: Markdown lets you style text on the web.  As usual, GitHub has a [handy markdown guide](https://guides.github.com/features/mastering-markdown/).
+# Create a Pull Request
 
-# Check your project status
-Now that you've changed a file, Git knows that a file has changed and can show you exactly what's different. This is where Git really shines!
+Now that you've made a change, it's time to merge it into the `master` branch of the repository.  This is done on GitHub with a Pull Request.
 
-```bash
-# Show the changed files and what changed in them
-git status
-git diff
-```
+1. Select `Publish branch` from the top bar.
+1. Go to [this repository on GitHub](https://github.com/SSC-CIO-DigitalTaskForce/hello).
+1. Click the green `Compare branch` button. 
+1. Update the pull request title and description to explain your change.
+1. Click `Create pull request`.
 
-# Commit your changes
-Once you're happy with the change you made, it's time to stage and commit them:
+:heavy_check_mark: The pull request can now be reviewed by other team members, and if everything looks good, it will get merged into `master`.  
 
-* **Stage**: tells Git you want to commit specific files.
-* **Commit**: creates a snapshot of the files, which allows you to see their changes over time.
+# Update your local repository
+As you're working on a repository, you'll also want to get other people's changes.  
 
-```bash
-# Stage and commit the HELLO.md file to your branch
-git add HELLO.md
-git commit -m "Added my name to the project"
-```
-
-# Push your changes to the remote project
-The last thing you need to do is share your changes with other people working on the project.  In GitHub, this is done with a pull request:
-
-```bash
-# Push your changes to the remote project so you can create a pull request
-git push origin your-branch-name
-```
-
-Now head over to [the project on GitHub](https://github.com/SSC-CIO-DigitalTaskForce/hello) and create a [pull request](https://guides.github.com/activities/hello-world/#pr)!
-
-# Getting other people's work
-Once your pull request is merged, it's available to everyone.  As you're working, you'll also want to get other people's work, to make sure your local project stays in sync with the remote project:
-
-```bash
-# Change to the master branch and get the latest version of the remote project
-git checkout master
-git pull
-```
-
-If you're working on a change in a local branch, and new work comes in, you can add it to your local branch like so:
-
-```bash
-# Get the latest changes to master, switch to your branch and add those changes to your branch
-git checkout master
-git pull
-git checkout your-branch-name
-git rebase master
-```
+1. Select `Fetch origin` from the top bar.
+1. If there are changes, it will ask if you want to merge them with your branch.
 
 # That's it!
 You're now ready to start working in Git.  If you have any problems following this guide, let us know with [an issue](https://github.com/SSC-CIO-DigitalTaskForce/hello/issues) or, even better, suggest a change with a pull request :wink:
-
-
-
-
