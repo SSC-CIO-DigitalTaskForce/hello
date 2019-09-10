@@ -8,7 +8,7 @@ This project will help you start working with GitHub. Once you've finished, you'
 * [Merge a pull request](#merge-a-pull-request)
 * [Update your repository](#update-your-repository)
 
-:warning: If you're new to Git, [this handbook](https://guides.github.com/introduction/git-handbook/) is a great intro.
+:rocket: If you're new to Git, [this handbook](https://guides.github.com/introduction/git-handbook/) is a great intro.
 
 # Setup
 1. [Create your GitHub account](https://github.com/join).
@@ -60,7 +60,7 @@ The pull request can now be reviewed by other team members, and if everything lo
 # Merge a pull request
 The final piece needed to make your change available to everyone working on the repository is to merge your pull request.
 
-1. Go to the [pull requests page of this repository](https://github.com/SSC-CIO-DigitalTaskForce/hello/pulls).
+1. Go to the [pull requests page of this repository](https://github.com/SSC-CIO-DigitalTaskForce/hello/pulls) and select your pull request.
 1. Click the arrow next to the `Merge pull request` button and select `Rebase and merge`.
 1. Click the `Rebase and merge` button and confirm the merge.
 
