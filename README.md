@@ -1,22 +1,14 @@
 # Hello!
-This project will help you start working with GitHub. Once you've finished, you'll be able to: 
-
-* [Clone a repository](#clone-a-repository)
-* [Create a new branch](#create-a-new-branch)
-* [Make a change](#make-a-change)
-* [Create a pull request](#create-a-pull-request)
-* [Merge a pull request](#merge-a-pull-request)
-* [Update your repository](#update-your-repository)
-
+This project will help you start working with GitHub.   
 :rocket: If you're new to Git, [this handbook](https://guides.github.com/introduction/git-handbook/) is a great intro.
 
-# Setup
+# Get started
 1. [Create your GitHub account](https://github.com/join).
-1. [Download and install Git](https://git-scm.com/downloads) (use all defaults for install).
-1. [Download and install VS Code](https://code.visualstudio.com/download) (use all defaults for install).
+1. [Download and install Git](https://git-scm.com/downloads) (use the install defaults).
+1. [Download and install VS Code](https://code.visualstudio.com/download) (use the install defaults).
 1. [Open a command prompt](https://www.wikihow.com/Open-the-Command-Prompt-in-Windows) and enter the following two commands:
 ```bash
-git config --global user.name "Your name"
+git config --global user.name "Your Name"
 git config --global user.email "your.name@canada.ca"
 # Once you're done, you can close this command prompt
 ```
@@ -36,12 +28,12 @@ Now you have a local copy of the repository that matches the remote repository o
 # Create a new branch
 We use the [GitHub flow](https://guides.github.com/introduction/flow/) to make changes, so the first step to making a change is creating a new branch.
 
-1. Go to the `Source Control` view of VS Code in the vertical left menu, click the `...` llink and select `Checkout to...`:
+1. Go to the `Source Control` view of VS Code in the vertical left menu, click the `...` link and select `Checkout to...`:
 ![Creating a branch in VS Code](./assets/imgs/new-branch.png)
 2. Select `Create new branch...` from the menu.
 3. Enter the branch name and click `Enter`.
 
-You're now working on a new branch of the repository.  All Git repositories have a main branch called `master`.  When you make changes in a new branch, it keeps your changes separate from the `master` branch until you're ready to merge them.  
+You're now working on a new branch of the repository.  All Git repositories have a main branch called `master`.  When you make changes in a new branch, it keeps your changes separate from the `master` branch until they're finished.  
 
 # Make a change
 1. Go back to the `Explorer` view of VS Code from the vertical left menu.
@@ -50,20 +42,20 @@ You're now working on a new branch of the repository.  All Git repositories have
 1. If you want to see how it will look, press `F1` and type `Markdown: Open preview`.
 1. Go back to the `Source Control` view.  You should now see `HELLO.md` in the list of changed files. 
 1. Select `HELLO.md` to see that change you made.
-1. If you're happy with the change, click the `+` that appears when you hover `HELLO.md` to stage the change.  This tells Git you are planning to commit the file.
+1. If you're happy with the change, click the `+` that appears when you hover `HELLO.md` to stage the change.  This tells Git you are planning to save the change to your branch (with a commit).
 1. Enter a message and press `CTRL + Enter` to commit the change:
 ![Creating a commit in VS Code](./assets/imgs/commit-message.png)
 
-You've just created a new commit!  This is where Git shines.  It keeps a complete history of changes (commits) made to a project that you can browse whenever you want.
+You've just created a commit!  This is where Git shines.  It keeps a complete history of all changes (commits) made to a repository that you can browse whenever you want.
 
 # Create a pull request
-Now that you've made a change, it's time to merge it with the `master` branch of the repository so everyone can see it.  This is done with a pull request.
+Now that you've made a change in your branch, it's time to move that change into the `master` branch of the repository so everyone can see it.  In Git, this is called merging your branch with `master` and GitHub uses **Pull Requests** to do this.
 
 1. Go back to the `Source Control` view, click the same `...` link you used to create a branch and select `Push`.
-1. Select `OK` to publish the branch.  
+1. Select `OK` to publish the branch.  This copies it from your local repository to the remote repository on GitHub.
 1. Open a browser and go to the [repository on GitHub](https://github.com/dtf-ein/hello).
 1. Click the green `Compare & pull request` button.
-1. Update the pull request title and description to explain the change.
+1. Update the pull request title and description to explain the change.  This lets other people know what you've done.
 1. Click `Create pull request`.
 
 The pull request can now be reviewed by other team members, and if everything looks good, it will get merged into `master`.  
